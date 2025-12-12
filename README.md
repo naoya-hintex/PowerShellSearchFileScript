@@ -22,10 +22,82 @@
 ---
 
 ## 🛠 使用技術
-- **言語**：PowerShell  
+- **言語**：PowerShell 5.1
 - **実行環境**：Windows 10 以降  
 
 ## 📂 使い方（Usage）
-1. リポジトリをクローン
-   ```bash
-   git clone https://github.com/ユーザー名/リポジトリ名.git
+### 1. ダウンロード・配置
+
+「Download ZIP」より本リポジトリをダウンロードし、解凍後、任意のフォルダにスクリプトを配置してください。
+
+例：C:\Scripts\Search-FileScript.ps1
+
+---
+
+### 2. スクリプトを開く
+
+Windows PowerShell ISE や Visual Studio Code などのエディタで  
+`Search-FileScript.ps1` を開いてください。
+
+---
+
+### 3. 設定値の変更
+
+スクリプト内の以下の設定値を、検索条件に合わせて変更します。
+
+```powershell
+# ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+# 設定値
+# スクリプトを実行する前に、設定を行ってください。
+# ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+# 検索フォルダ
+$targetFolderPath = "C:\Users\Public\Documents"
+
+# 検索条件
+# ファイル名の部分一致検索のほか、拡張子指定（例: *.xlsm）も可能です
+$findConditions = "report"
+
+# 出力先フォルダ
+$outputFolderPath = "C:\Users\Public\Output"
+
+```
+
+---
+
+### 4. スクリプトの実行
+
+設定が完了したら、上書き保存し、PowerShell からスクリプトを実行します。
+
+```powershell
+.\Search-File.ps1
+
+```
+
+※ 実行ポリシーによりエラーが発生する場合は、以下を実行してください。
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+```
+
+---
+
+### 5. 出力結果の確認
+
+実行が完了すると、「出力先フォルダ」内に、以下の形式の CSV ファイルが作成されます。
+
+ファイル名：yyyyMMdd_出力結果.csv
+| 列名            | 内容        |
+| ------------- | --------- |
+| FileName      | ファイル名     |
+| FullPath      | ファイルのフルパス |
+| LastWriteTime | 最終更新日時    |
+
+---
+
+### 6. 想定ユースケース
+
+- **社内共有フォルダから特定ファイルを一括検索したい場合**
+
+- **ファイル棚卸しや監査対応時の情報収集**
