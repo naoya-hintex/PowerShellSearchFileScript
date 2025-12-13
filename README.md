@@ -25,7 +25,7 @@
 - **言語**：PowerShell 5.1
 - **実行環境**：Windows 10 以降  
 
-## 📂 使い方（Usage）
+## 📂 使い方
 ### 1. ダウンロード・配置
 
 「Download ZIP」より本リポジトリをダウンロードし、解凍後、任意のフォルダにスクリプトを配置してください。
@@ -88,11 +88,20 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 実行が完了すると、「出力先フォルダ」内に、以下の形式の CSV ファイルが作成されます。
 
 ファイル名：yyyyMMdd_出力結果.csv
+
+出力定義
 | 列名            | 内容        |
 | ------------- | --------- |
 | FileName      | ファイル名     |
 | FullPath      | ファイルのフルパス |
 | LastWriteTime | 最終更新日時    |
+
+出力イメージ
+| FileName     | FullPath                               | LastWriteTime       |
+| ------------ | -------------------------------------- | ------------------- |
+| report1.xlsx | C:\Users\Public\Documents\report1.xlsx | 2025-01-15 14:22:35 |
+| 2report.docx | C:\Users\Public\Documents\2report.docx | 2025-01-08 11:10:18 |
+
 
 ---
 
@@ -101,3 +110,5 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 - **社内共有フォルダから特定ファイルを一括検索したい場合**
 
 - **ファイル棚卸しや監査対応時の情報収集**
+
+- **同名ファイルが複数ある場合、最新ファイルの特定の判断材料に**
