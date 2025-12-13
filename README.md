@@ -56,7 +56,7 @@ $targetFolderPath = "C:\Users\Public\Documents"
 
 # 検索条件
 # ファイル名の部分一致検索のほか、拡張子指定（例: *.xlsm）も可能です
-$findConditions = "report"
+$findConditions = "*report*"
 
 # 出力先フォルダ
 $outputFolderPath = "C:\Users\Public\Output"
