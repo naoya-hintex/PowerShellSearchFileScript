@@ -112,3 +112,15 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 - **ファイル棚卸しや監査対応時の情報収集**
 
 - **同名ファイルが複数ある場合、最新ファイルの特定の判断材料に**
+
+---
+
+## 📝 ライセンス
+
+This project is licensed under the MIT License.
+
+You are free to use, modify, and distribute this script for personal or commercial purposes.
+
+※ 本スクリプトは MIT License のもとで公開されています。
+商用・非商用を問わず、自由に利用・改変・再配布が可能です。
+
