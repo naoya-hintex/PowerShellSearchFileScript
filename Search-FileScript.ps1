@@ -1,122 +1,123 @@
-# ––––––––––––––––––––––––––––––––––––––––––––––
-# ƒtƒ@ƒCƒ‹–¼    Search-FileScript
-# ŠT—v          Žw’èƒtƒHƒ‹ƒ_‚©‚çŒŸõðŒ‚Éˆê’v‚·‚éƒtƒ@ƒCƒ‹‚ð’Šo‚µACSVƒtƒ@ƒCƒ‹‚É
-#               ƒGƒNƒXƒ|[ƒg‚µ‚Ü‚·B
-# ì¬ŽÒ        naoya-hintex
-# ˆø”          ‚È‚µ
-# –ß‚è’l        ‚È‚µ
-# ––––––––––––––––––––––––––––––––––––––––––––––
+# ï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Š
+# ãƒ•ã‚¡ã‚¤ãƒ«å    Search-FileScript
+# æ¦‚è¦          æŒ‡å®šãƒ•ã‚©ãƒ«ãƒ€ã‹ã‚‰æ¤œç´¢æ¡ä»¶ã«ä¸€è‡´ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŠ½å‡ºã—ã€CSVãƒ•ã‚¡ã‚¤ãƒ«ã«
+#               ã‚¨ã‚¯ã‚¹ãƒãƒ¼ãƒˆã—ã¾ã™ã€‚
+# ä½œæˆè€…        naoya-hintex
+# å¼•æ•°          ãªã—
+# æˆ»ã‚Šå€¤        ãªã—
+# ï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Šï¼Š
 
-# 
-# ƒOƒ[ƒoƒ‹•Ï”
-# 
+# ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
+# ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°
+# ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
 
-$notExistsFolderMsg = "ƒtƒHƒ‹ƒ_‚ª‘¶Ý‚µ‚Ü‚¹‚ñBƒtƒHƒ‹ƒ_ƒpƒX‚ð‚²Šm”F‚­‚¾‚³‚¢B"
+$notExistsFolderMsg = "ãƒ•ã‚©ãƒ«ãƒ€ãŒå­˜åœ¨ã—ã¾ã›ã‚“ã€‚ãƒ•ã‚©ãƒ«ãƒ€ãƒ‘ã‚¹ã‚’ã”ç¢ºèªãã ã•ã„ã€‚"
 
-$notParmMsg = "ŒŸõðŒ‚ªÝ’è‚³‚ê‚Ä‚¢‚Ü‚¹‚ñBŒŸõðŒ‚ðÝ’è‚Ì‚¤‚¦AÄŽÀs‚µ‚Ä‚­‚¾‚³‚¢B"
+$notParmMsg = "æ¤œç´¢æ¡ä»¶ãŒè¨­å®šã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚æ¤œç´¢æ¡ä»¶ã‚’è¨­å®šã®ã†ãˆã€å†å®Ÿè¡Œã—ã¦ãã ã•ã„ã€‚"
 
-# 
-# Ý’è’l
-# ƒXƒNƒŠƒvƒg‚ðŽÀs‚·‚é‘O‚ÉAÝ’è‚ðs‚Á‚Ä‚­‚¾‚³‚¢B
-# 
+# ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
+# è¨­å®šå€¤
+# ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’å®Ÿè¡Œã™ã‚‹å‰ã«ã€è¨­å®šã‚’è¡Œã£ã¦ãã ã•ã„ã€‚
+# ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
 
-# ŒŸõƒtƒHƒ‹ƒ_
+# æ¤œç´¢ãƒ•ã‚©ãƒ«ãƒ€
 $targetFolderPath = ""
 
-# ŒŸõðŒ
+# æ¤œç´¢æ¡ä»¶
 $findConditions = ""
 
-# o—ÍæƒtƒHƒ‹ƒ_
+# å‡ºåŠ›å…ˆãƒ•ã‚©ãƒ«ãƒ€
 $outputFolderPath  = ""
 
-# 
-# ŠÖ”–¼        Write-InfoLogs
-# ŠT—v          ƒ^[ƒ~ƒiƒ‹‚Éu[ŽÀs“úŽž][ƒƒbƒZ[ƒW]v‚ðo—Í‚µ‚Ü‚·B
-# ì¬ŽÒ        naoya-hintex
-# ˆø”          o—ÍƒƒbƒZ[ƒW
-# –ß‚è’l        ‚È‚µ
-# 
+# ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
+# é–¢æ•°å        Write-InfoLogs
+# æ¦‚è¦          ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã«ã€Œ[å®Ÿè¡Œæ—¥æ™‚][ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸]ã€ã‚’å‡ºåŠ›ã—ã¾ã™ã€‚
+# ä½œæˆè€…        naoya-hintex
+# å¼•æ•°          å‡ºåŠ›ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
+# æˆ»ã‚Šå€¤        ãªã—
+# ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
 function Write-InfoLogs {
     param (
         [string]$message
     )
     
-    # ƒ^[ƒ~ƒiƒ‹‚Éu[ŽÀs“úŽž][ƒƒbƒZ[ƒW]v‚ðo—Í
+    # ã‚¿ãƒ¼ãƒŸãƒŠãƒ«ã«ã€Œ[å®Ÿè¡Œæ—¥æ™‚][ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸]ã€ã‚’å‡ºåŠ›
     Write-Host "[$(Get-Date -Format 'yyyy/MM/dd HH:mm:ss')] $message"
 }
 
-# 
-# ŠÖ”–¼        Check-FolderExists
-# ŠT—v          ˆø”‚ÌƒtƒHƒ‹ƒ_‚ª‘¶Ý‚·‚é‚©ƒ`ƒFƒbƒN‚µ‚Ü‚·B
-# ì¬ŽÒ        naoya-hintex
-# ˆø”          ƒ`ƒFƒbƒN‘ÎÛ‚ÌƒtƒHƒ‹ƒ_ƒpƒX
-# ˆø”          ƒ`ƒFƒbƒN‘ÎÛ‚ÌƒtƒHƒ‹ƒ_–¼
-# –ß‚è’l        TrueFƒtƒHƒ‹ƒ_‚ª‘¶Ý‚·‚éAFalseFƒtƒHƒ‹ƒ_‚ª‘¶Ý‚µ‚È‚¢
-# 
+# ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
+# é–¢æ•°å        Check-FolderExists
+# æ¦‚è¦          å¼•æ•°ã®ãƒ•ã‚©ãƒ«ãƒ€ãŒå­˜åœ¨ã™ã‚‹ã‹ãƒã‚§ãƒƒã‚¯ã—ã¾ã™ã€‚
+# ä½œæˆè€…        naoya-hintex
+# å¼•æ•°          ãƒã‚§ãƒƒã‚¯å¯¾è±¡ã®ãƒ•ã‚©ãƒ«ãƒ€ãƒ‘ã‚¹
+# å¼•æ•°          ãƒã‚§ãƒƒã‚¯å¯¾è±¡ã®ãƒ•ã‚©ãƒ«ãƒ€å
+# æˆ»ã‚Šå€¤        Trueï¼šãƒ•ã‚©ãƒ«ãƒ€ãŒå­˜åœ¨ã™ã‚‹ã€Falseï¼šãƒ•ã‚©ãƒ«ãƒ€ãŒå­˜åœ¨ã—ãªã„
+# ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
 function Check-FolderExists {
     param (
         [string]$checkFolderPath
     )
 
-    # ƒ`ƒFƒbƒN‘ÎÛ‚ÌƒtƒHƒ‹ƒ_ƒpƒX‚ªƒuƒ‰ƒ“ƒN‚Ìê‡AFalse‚ð•Ô‹p
+    # ãƒã‚§ãƒƒã‚¯å¯¾è±¡ã®ãƒ•ã‚©ãƒ«ãƒ€ãƒ‘ã‚¹ãŒãƒ–ãƒ©ãƒ³ã‚¯ã®å ´åˆã€Falseã‚’è¿”å´
     if ($checkFolderPath -eq "") {
         return $false
     }
 
-    # ƒ`ƒFƒbƒN‘ÎÛ‚ÌƒtƒHƒ‹ƒ_ƒpƒX‚ª‘¶Ý‚µ‚È‚¢ê‡AFalse‚ð•Ô‹p
+    # ãƒã‚§ãƒƒã‚¯å¯¾è±¡ã®ãƒ•ã‚©ãƒ«ãƒ€ãƒ‘ã‚¹ãŒå­˜åœ¨ã—ãªã„å ´åˆã€Falseã‚’è¿”å´
     if ((Test-Path $checkFolderPath) -eq $false) {
         return $false
     }
     
-    # ƒtƒHƒ‹ƒ_ƒpƒX‚É–â‘è‚È‚¢‚Æ”»’f‚µATrue‚ð•Ô‹p
+    # ãƒ•ã‚©ãƒ«ãƒ€ãƒ‘ã‚¹ã«å•é¡Œãªã„ã¨åˆ¤æ–­ã—ã€Trueã‚’è¿”å´
     return $true
 
 }
 
-# 
-# ƒƒCƒ“ˆ—
-# 
+# ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
+# ãƒ¡ã‚¤ãƒ³å‡¦ç†
+# ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
 
-Write-InfoLogs -message "ƒXƒNƒŠƒvƒg‚ÌŽÀs‚ðŠJŽn‚µ‚Ü‚·B"
+Write-InfoLogs -message "ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®å®Ÿè¡Œã‚’é–‹å§‹ã—ã¾ã™ã€‚"
 
-# ƒXƒNƒŠƒvƒgŽÀs“ú
+# ã‚¹ã‚¯ãƒªãƒ—ãƒˆå®Ÿè¡Œæ—¥
 $executeDate = Get-Date -Format 'yyyyMMdd'
 
-# o—Íƒtƒ@ƒCƒ‹–¼
-$outputFileName = $executeDate + '_o—ÍŒ‹‰Ê.csv'
+# å‡ºåŠ›ãƒ•ã‚¡ã‚¤ãƒ«å
+$outputFileName = $executeDate + '_å‡ºåŠ›çµæžœ.csv'
 
-# [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
-# Ý’è’l‚Ìƒ`ƒFƒbƒN
-# [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+# ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼
+# è¨­å®šå€¤ã®ãƒã‚§ãƒƒã‚¯
+# ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼
 
-# ŒŸõƒtƒHƒ‹ƒ_‚ª‘¶Ý‚µ‚È‚¢ê‡AƒXƒNƒŠƒvƒg‚ÌŽÀs‚ðI—¹‚·‚é
+# æ¤œç´¢ãƒ•ã‚©ãƒ«ãƒ€ãŒå­˜åœ¨ã—ãªã„å ´åˆã€ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®å®Ÿè¡Œã‚’çµ‚äº†ã™ã‚‹
 if ((Check-FolderExists -checkFolderPath $targetFolderPath) -eq $false) {
-    Write-InfoLogs -message ("ŒŸõ" + $notExistsFolderMsg)
+    Write-InfoLogs -message ("æ¤œç´¢" + $notExistsFolderMsg)
     return
 }
 
-# o—ÍæƒtƒHƒ‹ƒ_‚ª‘¶Ý‚µ‚È‚¢ê‡AƒXƒNƒŠƒvƒg‚ÌŽÀs‚ðI—¹‚·‚é
+# å‡ºåŠ›å…ˆãƒ•ã‚©ãƒ«ãƒ€ãŒå­˜åœ¨ã—ãªã„å ´åˆã€ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®å®Ÿè¡Œã‚’çµ‚äº†ã™ã‚‹
 if ((Check-FolderExists -checkFolderPath $outputFolderPath) -eq $false) {
-    Write-InfoLogs -message ("o—Íæ" + $notExistsFolderMsg)
+    Write-InfoLogs -message ("å‡ºåŠ›å…ˆ" + $notExistsFolderMsg)
     return
 }
 
-# ŒŸõðŒ‚ªƒuƒ‰ƒ“ƒN‚Ìê‡AƒXƒNƒŠƒvƒg‚ÌŽÀs‚ðI—¹‚·‚é
+# æ¤œç´¢æ¡ä»¶ãŒãƒ–ãƒ©ãƒ³ã‚¯ã®å ´åˆã€ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®å®Ÿè¡Œã‚’çµ‚äº†ã™ã‚‹
 if ($findConditions -eq "") {
     Write-InfoLogs -message $notParmMsg
     return
 }
 
-Write-InfoLogs ("Ý’è’l‚Ìƒ`ƒFƒbƒN‚ªŠ®—¹‚µ‚Ü‚µ‚½B")
+Write-InfoLogs ("è¨­å®šå€¤ã®ãƒã‚§ãƒƒã‚¯ãŒå®Œäº†ã—ã¾ã—ãŸã€‚")
 
-# [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
-# ƒtƒ@ƒCƒ‹ŒŸõ‚ÌŽÀs‚ÆCSVƒtƒ@ƒCƒ‹‚Ö‚ÌƒGƒNƒXƒ|[ƒg
-# [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[
+# ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼
+# ãƒ•ã‚¡ã‚¤ãƒ«æ¤œç´¢ã®å®Ÿè¡Œã¨CSVãƒ•ã‚¡ã‚¤ãƒ«ã¸ã®ã‚¨ã‚¯ã‚¹ãƒãƒ¼ãƒˆ
+# ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼ãƒ¼
 
-Write-InfoLogs ("ƒtƒ@ƒCƒ‹ŒŸõ‚ÌŽÀs‚ÆCSVƒtƒ@ƒCƒ‹‚Ö‚ÌƒGƒNƒXƒ|[ƒg‚ðŠJŽn‚µ‚Ü‚·B")
+Write-InfoLogs ("ãƒ•ã‚¡ã‚¤ãƒ«æ¤œç´¢ã®å®Ÿè¡Œã¨CSVãƒ•ã‚¡ã‚¤ãƒ«ã¸ã®ã‚¨ã‚¯ã‚¹ãƒãƒ¼ãƒˆã‚’é–‹å§‹ã—ã¾ã™ã€‚")
 
 Get-ChildItem -Path $targetFolderPath -Recurse -Filter $findConditions -File |
 Select-Object Name, FullName, LastWriteTime |
-Export-Csv -Path(Join-Path $outputFolderPath -ChildPath $outputFileName) -NoTypeInformation -Encoding UTF8BOM
+Export-Csv -Path(Join-Path $outputFolderPath -ChildPath $outputFileName) -NoTypeInformation -Encoding UTF8
 
-Write-InfoLogs ("ƒXƒNƒŠƒvƒg‚ÌŽÀs‚ðI—¹‚µ‚Ü‚µ‚½B")
+Write-InfoLogs ("ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®å®Ÿè¡Œã‚’çµ‚äº†ã—ã¾ã—ãŸã€‚")
+
