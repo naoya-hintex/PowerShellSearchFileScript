@@ -105,7 +105,7 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
 ---
 
-### 6. 想定ユースケース
+### 💡 想定ユースケース
 
 - **社内共有フォルダから特定ファイルを一括検索したい場合**
 
